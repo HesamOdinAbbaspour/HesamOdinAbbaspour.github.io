@@ -1,0 +1,308 @@
+@mixin bpmin-1300 {
+    @media screen and (min-width:1300px) {
+        @content;
+    }
+}
+@mixin bp-576 {
+    @media screen and (max-width:576px) {
+        @content;
+    }
+}
+@mixin bp-768 {
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
+@mixin bp-992 {
+    @media screen and (max-width:992px) {
+        @content;
+    }
+}
+@mixin bp-1200 {
+    @media screen and (max-width:1200px) {
+        @content;
+    }
+}
+
+
+/*********************/
+#content{
+    margin-top: 126px;
+    border-top: 1px solid #eee;
+    padding-top: 27px;
+    @include bpmin-1300{
+        .container-fluid{
+            width: 1300px;
+        }
+    }
+    .contact-address{
+        box-shadow: 0 0 10px #eee;
+        padding: 30px;
+        line-height: 1.75;
+        h3{
+            font-size: 15px;
+            font-weight: 600;
+            display: inline-block;
+            padding: 7px 0px 7px 5px;
+            color: #333;
+        }
+        span{
+            display: inline-block;
+            padding: 7px 10px;
+            color: #fff;
+            background-color: #ffaa65;
+            font-size: 13px;
+        }
+        .address{
+            padding: 20px 0;
+            font-size: 15px;
+            height: 100px;
+            overflow: hidden;
+            @include bp-992{
+                height: 75px;
+            }
+            @include bp-576{
+                height: 100px;
+            }
+        }
+        .user-name{
+            font-size: 15px;
+            color: #818181;
+            i{
+                color: #000;
+                font-size: 16px;
+                margin-left: 8px;
+                font-weight: 400;
+            }
+        }
+        .phone-title{
+            font-size: 15px;
+            font-weight: 600;
+            margin-top: 16px;
+        }
+        .number-phone{
+            font-size: 14px;
+            margin-top: 7px;
+            color: #818181;
+            i{
+                color: #000;
+                font-size: 16px;
+                margin-left: 8px;
+                font-weight: 400;
+            }
+        }
+        .code-number{
+            font-size: 14px;
+            margin-top: 7px;
+            color: #818181;
+            i{
+                color: #000;
+                font-size: 16px;
+                margin-left: 8px;
+                font-weight: 400;
+            }
+        }
+        
+    }
+    .contact-address-active{
+        background-color: rgb(250, 250, 250);
+    }
+    /******* start edit-adress ********/
+    .edit-address{
+        display: block;
+        font-size: 16px;
+        padding: 17px 16px;
+        background: #000;
+        color: #fff;
+        margin-top: 25px;
+        i{
+            color: #fff;
+            margin-right: 36px;
+            font-size: 11px;
+            font-weight: 700;
+            vertical-align: middle;
+        }
+        .fa-calendar-edit{
+            font-size: 16px;
+            font-weight: 400;
+            margin-right: 0;
+            margin-left: 7px;
+            vertical-align: middle;
+        }
+    }
+    /******* end edit-adress ********/
+    /*********** start modal-style ***********/
+    .modal{
+        .modal-header{
+            .modal-title{
+                padding-top: 19px;
+            }
+            button.close{
+                margin: 0;
+            }
+        }
+        .modal-body {
+            form{
+                label{
+                    padding-bottom: 9px;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+                .form-control{
+                    font-size: 14px;
+                    color: #818181;
+                    border-color: #eee;
+                    &:focus{
+                        box-shadow: 0 0 0 0.1rem rgba(97, 173, 235, 0.25);
+                    }
+                }
+            }
+        }
+        .modal-footer{
+            button{
+                font-size: 13px;
+                border-radius: 0 !important;
+                color: #fff;
+                background-color: #ffaa65;
+                &:focus{
+                    box-shadow: unset;
+                }
+            }
+            button.Save-changes{
+                background: #000 !important;
+            }
+        }
+    }
+    /*********** end modal-style ***********/
+}
+
+/************ start code-offer *********/
+.code-offer{
+    box-shadow: 0 0 10px #eee;
+    padding: 30px 20px;
+    margin-top: 28px;
+    p{
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1.65;
+    }
+    form{
+        border: 0;
+        border-radius: 20px;
+        position: relative;
+        display: inline-block;
+        input[type=text] {
+            width: 150px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border: 1px solid #eee;
+            font-size: 14px;
+            padding: 8px 8px;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+        input[type=text]:focus{
+            outline: 0;
+        }
+    }
+    .fa-badge-percent{
+        color: #ffaa65;
+        vertical-align: middle;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .form-btn {
+        background-color: #000;
+        color: #fff;
+        width: 46px;
+        height: 46px;
+        position: absolute;
+        left: 0;
+        top: -1px;
+        border: 0;
+        border-radius: 50%;
+    }
+} 
+/************ end code-offer *********/
+.factor-bottom{
+    box-shadow: 0 0 10px #eee;
+    padding: 30px 20px;
+    margin-top: 28px;
+    margin-left: 0 !important;
+    p{
+        display: inline-block;
+        font-size: 15px;
+        line-height: 1.65;
+    }
+    .form-check-label{
+        margin-right: 6px;
+    }
+}
+/**************/
+.content-left{
+    box-shadow: 0 0 10px #eee;
+    padding: 30px 20px;
+    color: #333;
+    .content-left-title{
+        font-size: 15px;
+        margin-bottom: 10px;
+        padding: 8px 5px;
+        i{
+            color: #818181;
+            font-size: 18px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+        strong{
+            color: #818181;
+            font-weight: 600;
+            margin-right: 12px;
+            // float: left;
+        }
+        p{
+            font-size: 16px;
+            display: inline-block;
+        }
+        strong span{
+            font-size: 13px;
+            font-weight: 400;
+        }
+    }
+}
+
+.total-price{
+    border-top: 1px solid #eee;
+    padding-top: 35px !important;
+    strong{
+        color: #fff !important;
+        background-color: #00d994;
+        padding: 10px 10px;
+    }
+    p{
+        font-weight: 600;
+        
+    }
+}
+
+.content-left-btn{
+    background-color: #000;
+    color: #fff;
+    padding: 11px 15px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75;
+    margin-top: 20px;
+    &:hover{
+        color: #fff;
+        background-color: #333;
+    }
+    i{
+        font-size: 24px;
+        vertical-align: middle;
+    }
+}
+
+

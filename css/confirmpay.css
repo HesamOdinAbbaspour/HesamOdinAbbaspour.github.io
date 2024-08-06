@@ -1,0 +1,322 @@
+/*********************/
+#content {
+  margin-top: 126px;
+  border-top: 1px solid #eee;
+  padding-top: 27px;
+  /******* start edit-adress ********/
+  /******* end edit-adress ********/
+  /*********** start modal-style ***********/
+  /*********** end modal-style ***********/
+}
+
+@media screen and (min-width: 1300px) {
+  #content .container-fluid {
+    width: 1300px;
+  }
+}
+
+#content .contact-address {
+  -webkit-box-shadow: 0 0 10px #eee;
+          box-shadow: 0 0 10px #eee;
+  padding: 30px;
+  line-height: 1.75;
+}
+
+#content .contact-address h3 {
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 7px 0px 7px 5px;
+  color: #333;
+}
+
+#content .contact-address span {
+  display: inline-block;
+  padding: 7px 10px;
+  color: #fff;
+  background-color: #ffaa65;
+  font-size: 13px;
+}
+
+#content .contact-address .address {
+  padding: 20px 0;
+  font-size: 15px;
+  height: 100px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 992px) {
+  #content .contact-address .address {
+    height: 75px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #content .contact-address .address {
+    height: 100px;
+  }
+}
+
+#content .contact-address .user-name {
+  font-size: 15px;
+  color: #818181;
+}
+
+#content .contact-address .user-name i {
+  color: #000;
+  font-size: 16px;
+  margin-left: 8px;
+  font-weight: 400;
+}
+
+#content .contact-address .phone-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+#content .contact-address .number-phone {
+  font-size: 14px;
+  margin-top: 7px;
+  color: #818181;
+}
+
+#content .contact-address .number-phone i {
+  color: #000;
+  font-size: 16px;
+  margin-left: 8px;
+  font-weight: 400;
+}
+
+#content .contact-address .code-number {
+  font-size: 14px;
+  margin-top: 7px;
+  color: #818181;
+}
+
+#content .contact-address .code-number i {
+  color: #000;
+  font-size: 16px;
+  margin-left: 8px;
+  font-weight: 400;
+}
+
+#content .contact-address-active {
+  background-color: #fafafa;
+}
+
+#content .edit-address {
+  display: block;
+  font-size: 16px;
+  padding: 17px 16px;
+  background: #000;
+  color: #fff;
+  margin-top: 25px;
+}
+
+#content .edit-address i {
+  color: #fff;
+  margin-right: 36px;
+  font-size: 11px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+#content .edit-address .fa-calendar-edit {
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 0;
+  margin-left: 7px;
+  vertical-align: middle;
+}
+
+#content .modal .modal-header .modal-title {
+  padding-top: 19px;
+}
+
+#content .modal .modal-header button.close {
+  margin: 0;
+}
+
+#content .modal .modal-body form label {
+  padding-bottom: 9px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#content .modal .modal-body form .form-control {
+  font-size: 14px;
+  color: #818181;
+  border-color: #eee;
+}
+
+#content .modal .modal-body form .form-control:focus {
+  -webkit-box-shadow: 0 0 0 0.1rem rgba(97, 173, 235, 0.25);
+          box-shadow: 0 0 0 0.1rem rgba(97, 173, 235, 0.25);
+}
+
+#content .modal .modal-footer button {
+  font-size: 13px;
+  border-radius: 0 !important;
+  color: #fff;
+  background-color: #ffaa65;
+}
+
+#content .modal .modal-footer button:focus {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+#content .modal .modal-footer button.Save-changes {
+  background: #000 !important;
+}
+
+/************ start code-offer *********/
+.code-offer {
+  -webkit-box-shadow: 0 0 10px #eee;
+          box-shadow: 0 0 10px #eee;
+  padding: 30px 20px;
+  margin-top: 28px;
+}
+
+.code-offer p {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.code-offer form {
+  border: 0;
+  border-radius: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.code-offer form input[type=text] {
+  width: 150px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid #eee;
+  font-size: 14px;
+  padding: 8px 8px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.code-offer form input[type=text]:focus {
+  outline: 0;
+}
+
+.code-offer .fa-badge-percent {
+  color: #ffaa65;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.code-offer .form-btn {
+  background-color: #000;
+  color: #fff;
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  left: 0;
+  top: -1px;
+  border: 0;
+  border-radius: 50%;
+}
+
+/************ end code-offer *********/
+.factor-bottom {
+  -webkit-box-shadow: 0 0 10px #eee;
+          box-shadow: 0 0 10px #eee;
+  padding: 30px 20px;
+  margin-top: 28px;
+  margin-left: 0 !important;
+}
+
+.factor-bottom p {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.factor-bottom .form-check-label {
+  margin-right: 6px;
+}
+
+/**************/
+.content-left {
+  -webkit-box-shadow: 0 0 10px #eee;
+          box-shadow: 0 0 10px #eee;
+  padding: 30px 20px;
+  color: #333;
+}
+
+.content-left .content-left-title {
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding: 8px 5px;
+}
+
+.content-left .content-left-title i {
+  color: #818181;
+  font-size: 18px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.content-left .content-left-title strong {
+  color: #818181;
+  font-weight: 600;
+  margin-right: 12px;
+}
+
+.content-left .content-left-title p {
+  font-size: 16px;
+  display: inline-block;
+}
+
+.content-left .content-left-title strong span {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.total-price {
+  border-top: 1px solid #eee;
+  padding-top: 35px !important;
+}
+
+.total-price strong {
+  color: #fff !important;
+  background-color: #00d994;
+  padding: 10px 10px;
+}
+
+.total-price p {
+  font-weight: 600;
+}
+
+.content-left-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 11px 15px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.75;
+  margin-top: 20px;
+}
+
+.content-left-btn:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.content-left-btn i {
+  font-size: 24px;
+  vertical-align: middle;
+}
+/*# sourceMappingURL=confirmpay.css.map */

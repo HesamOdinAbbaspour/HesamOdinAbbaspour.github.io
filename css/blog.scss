@@ -1,0 +1,321 @@
+@mixin bp-576 {
+    @media screen and (max-width:576px) {
+        @content;
+    }
+}
+@mixin bp-768 {
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
+@mixin bp-992 {
+    @media screen and (max-width:992px) {
+        @content;
+    }
+}
+@mixin bp-1200 {
+    @media screen and (max-width:1200px) {
+        @content;
+    }
+}
+@mixin bpmin-1300 {
+    @media screen and (min-width:1300px) {
+        @content;
+    }
+}
+
+
+/********* start hearer **********/
+
+// .header{
+//     height: 80px;
+//     .menu-blog{
+//         color: #333;
+//         text-align: center;
+//         ul{
+//             padding: 25px 0;
+//             li{
+//                 display: inline-block;
+//                 padding: 18px 17px;
+//                 font-size: 18px;
+//                 a{
+//                     position: relative;
+//                     display: inline-block;
+//                     padding-bottom: 10px;
+//                     color: #333;
+//                     &::before{
+//                         content: "";
+//                         position: absolute;
+//                         inset: 0;
+//                         display: block;
+//                         width: 0;
+//                         height: 2px;
+//                         margin: auto 0 0 auto;
+//                         background-color: #333;
+//                         transition: all .3s;
+//                     }
+//                 }
+//                 &:hover a::before{
+//                     width: 100%;
+//                 }
+//             }
+//             .active a::before{
+//                 width: 100%;
+//             }
+//         }
+        
+//     }
+// }
+/********* end hearer **********/
+/*********** start slider-blog ***********/
+#slider-blog{
+    position: relative;
+    @include bp-992{
+        margin-top: 120px;
+    }
+    .slider-blog-big{
+        .owl-nav{
+            opacity: 1;
+            button{
+                width: 56px;
+                height: 56px;
+                background: transparent;
+                font-size: 32px;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                color: #fff;
+                font-weight: 500;
+                text-align: center;
+                align-items: center;
+                @include bp-992{
+                    width: 40px;
+                    height: 40px;
+                }
+                @include bp-576{
+                    display: none;
+                }
+                span{
+                    display: inline-block;
+                    line-height: 0;
+                    height: fit-content;
+                    margin-bottom: 4px;
+                    margin-right: 3px;
+                }
+            }
+            .owl-prev{  
+                position: absolute;
+                right: 28px;
+                top: 44%;
+                @include bp-992{
+                    top: 40%;
+                    right: 15px;
+                }
+            }
+            .owl-next{
+                position: absolute;
+                left: 28px;
+                top: 44%;
+                @include bp-992{
+                    top: 40%;
+                    left: 15px;
+                }
+            }
+        }
+        .owl-dots{
+            position: absolute;
+            bottom: 25px;
+            right: 0;
+            left: 0;
+            @include bp-768{
+                bottom: 4px;
+            }
+            .owl-dot{
+                span {
+                width: 24px;
+                height: 2px;
+                background-color: rgb(189, 187, 187);
+                }
+                &:hover span{
+                    background-color: #fff;
+                }
+            }
+            .active span{
+                background-color: #fff;
+            } 
+        }
+        
+    }
+}
+/*********** end slider-blog ************/
+
+
+/*********** start blog-content *************/
+#blog-content{
+    margin-top: 20px;
+    @include bp-992{
+        margin-top: 0;
+    }
+    .container-fluid{
+        @include bpmin-1300{
+            width: 1300px;
+        }
+    }
+    .right-content{
+        .articel-big{
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding: 25px 0px;
+        }
+            .subject{
+                font-size: 16px;
+                margin-top: 25px;
+                .date{
+                    padding-top: 6px;
+                }
+                .subject-item{
+                    line-height: 1.5;
+                    div{
+                        display: inline-block;
+                        cursor: pointer;
+                    }
+                }
+            }
+            h4{
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.75;
+                padding: 10px 0;
+                color: #000;
+            }
+            p{
+                font-size: 17px;
+                color: #818181;
+                line-height: 1.85;
+                height: 62px;
+                overflow: hidden;
+            }
+            .read-more{
+                position: relative;
+                display: inline-block;
+                margin: 20px 0;
+                font-size: 16px;
+                padding: 12px 4px;
+                border-bottom: 2px solid #818181;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    margin: auto 0 -2px auto;
+                    background-color: #000;
+                    transition: all .3s;
+                }
+                &:hover::before{
+                    width: 100%;
+                }
+            }
+        .articel-med{
+            text-align: right;
+            padding: 30px 0;
+            border-top: 1px solid #eee;
+            @include bp-576{
+                text-align: center;
+            }
+            h4{
+                height: 55px;
+                overflow: hidden;
+            }
+            a{
+                margin: 10px 0;
+            }
+            img{
+                @include bp-992{
+                    width: 100%;
+                }
+                
+            }
+        }
+
+    }
+    .left-content{
+        padding: 25px 0px;
+        position: sticky;
+        top: 65px;
+        h3{
+            font-size: 25px;
+            font-weight: 300;
+        }
+        form{
+            border-bottom: 1px solid #eee;
+            position: relative;
+            transition: all .3s;
+            margin-top: 30px;
+            input[type=text] {
+                color: #ccc;
+                padding: 7px 0 7px 7px;
+                font-size: 14px;
+                border: none;
+                height: 38px;
+                background-color: transparent;
+                width: 100%;
+                &:focus{
+                    outline: 0;
+                    border-bottom: 2px solid #333;
+                    transition: all .3s;
+                }
+            }
+            button{
+                background: transparent;
+                border: 0;
+                font-size: 15px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                height: fit-content;
+                padding: 5px ;
+                margin: auto 0;
+            }
+            
+        }
+        .list-articel{
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            h4{
+                font-size: 25px;
+                font-weight: 300;
+                padding: 27px 0;
+            }
+            .list-articel-item{
+                display: block;
+                margin: 20px 0;
+                padding: 10px 0;
+                h5{
+                    overflow: hidden;
+                    font-size: 16px;
+                    line-height: 1.60;
+                    font-weight: 500;
+                    height: 50px;
+                    @include bp-992{
+                        margin-top: 50px;
+                    }
+                    @include bp-768{
+                        margin-top: 0;
+                    }
+                }
+                span{
+                    color: #818181;
+                    display: inline-block;
+                    margin-top: 8px;
+                }
+                &:hover h5{
+                    color: #000;
+                }
+            }
+        }
+    }
+
+}
+/*********** end blog-content *************/
